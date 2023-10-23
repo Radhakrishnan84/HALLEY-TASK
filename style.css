@@ -1,0 +1,140 @@
+body {
+  font-family:'Times New Roman', Times, serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 215px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #272323;
+  overflow-x: hidden;
+  padding-top: 55px;
+}
+.sidebar a {
+  padding: 8px 8px 12px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f3e9e9;
+  display: block;
+}
+.sidebar a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.top-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.publish-button,
+.preview-button {
+  padding: 10px 10px;
+}
+
+.publish-button {
+  background-color: #4caf50;
+  margin: 5px;
+}
+
+.publish-button:hover {
+  background-color: #45a049;
+}
+
+.preview-button {
+  background-color: #008cba;
+  margin: 5px;
+}
+
+.preview-button:hover {
+  background-color: #007a8a;
+}
+
+#form-builder {
+  display: flex;
+}
+
+#toolbox {
+  width: 150px;
+  min-height: 300px;
+  padding: 20px;
+  border: 5px black #2b292900;
+}
+
+#toolbox .draggable {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #ebe4e4;
+  border: 1px solid #f4f3f3;
+  cursor: move;
+}
+#form-preview {
+  padding: 280px;
+  border: 2px solid #e70808;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 700px;
+  margin-left: calc(160px + 80px);
+}
+.down-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.clear-button,
+.save-button {
+  padding: 10px 20px;
+}
+
+.clear-button {
+  background-color: #4caf50;
+  margin: 10px;
+}
+
+.clear-button:hover {
+  background-color: #45a049;
+}
+
+.save-button {
+  background-color: #008cba;
+  margin: 10px;
+}
+
+.save-button:hover {
+  background-color: #007a8a;
+}
+.layout {
+  display: flex;
+  flex-direction: row;
+}
+
+.layout-section {
+  flex: 1;
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #0a0303;
+  margin: 5px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 10px;
+    width: 300px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
